@@ -6,7 +6,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: mcd_lambda.lambda_handler
-      Runtime: python3.7
+      Runtime: python3.6
       CodeUri: ./mcd
       Description: 'Lambda function for CD Demo'
       MemorySize: 128
@@ -20,4 +20,4 @@ Resources:
             Method: get
       Environment:
         Variables:
-            REGION: ohio
+            REGION: us-east-2
